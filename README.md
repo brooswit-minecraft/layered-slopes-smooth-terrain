@@ -20,8 +20,9 @@ blocks, so slopes read as fractional ramps instead of staircases. **Only
 newly generated chunks are ever touched; existing chunks are never
 retroactively edited.** Manual grading, erosion, cave-ins and
 driving-surface physics are **not** part of this mod — they stay in
-[Dynamic Terrain](https://github.com/brooswit-minecraft/dynamic-terrain),
-which no longer registers this feature once it depends on this mod.
+[Legacy Dynamic Terrain](https://github.com/brooswit-minecraft/legacy-dynamic-terrain)
+(formerly Dynamic Terrain), which no longer registers this feature once it
+depends on this mod.
 
 ## Compatibility note
 

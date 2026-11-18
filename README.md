@@ -1,8 +1,13 @@
-# smooth-slopes
+# layered-slopes-smooth-terrain
 
-Automatic world-generation smoothing extracted from Dynamic Terrain, depending on Layered Slopes.
+Layered Slopes Smooth Terrain — automatic world-generation smoothing extracted
+from Dynamic Terrain, depending on Layered Slopes. Repository renamed from
+`smooth-slopes` for naming consistency with the other Layered Slopes
+compatibility mods (MINECRAFT-556); the shipped mod ID, package, registry and
+config namespaces are deliberately unchanged — see Compatibility note below.
 
-NeoForge 1.21.1, Java 21. Mod ID: `smoothslopes`. MIT licensed.
+NeoForge 1.21.1, Java 21. Mod ID: `smoothslopes` (unchanged; see
+Compatibility note). MIT licensed.
 
 Ships Dynamic Terrain's worldgen-only surface smoothing (MINECRAFT-500):
 `SmoothSurfaceFeature` (the registered `top_layer_modification` feature),
@@ -15,8 +20,18 @@ blocks, so slopes read as fractional ramps instead of staircases. **Only
 newly generated chunks are ever touched; existing chunks are never
 retroactively edited.** Manual grading, erosion, cave-ins and
 driving-surface physics are **not** part of this mod — they stay in
-[Dynamic Terrain](https://github.com/brooswit-minecraft/dynamic-terrain),
-which no longer registers this feature once it depends on this mod.
+[Legacy Dynamic Terrain](https://github.com/brooswit-minecraft/legacy-dynamic-terrain)
+(formerly Dynamic Terrain), which no longer registers this feature once it
+depends on this mod.
+
+## Compatibility note
+
+This repository and its GitHub display name changed; the shipped mod ID
+(`smoothslopes`), Java package, config keys, registry/resource/data
+namespaces, migration checks and networking IDs did not. Existing worlds and
+modpacks keep recognizing this mod exactly as before — do not install this
+alongside any build still published under the old repository as a separate
+mod; they are the same mod.
 
 ## Install / upgrade pairing
 
